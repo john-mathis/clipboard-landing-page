@@ -1,0 +1,357 @@
+body {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+
+    margin: auto;
+}
+
+
+/* Header Section */
+.header_section {
+    background: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 4rem;
+}
+
+.header_container {
+    max-width: 85%;
+    padding: 1rem;
+}
+
+.logo_container {
+    margin-bottom: 3rem;
+}
+
+
+.main_heading {
+    font-size: 1.7rem;
+    color: hsl(210, 10%, 33%);
+}
+
+
+/* Global Styles */
+.heading {
+    color: hsl(210, 10%, 33%);
+}
+
+.sub_heading {
+    color: hsl(210, 10%, 33%);
+}
+
+
+.heading_paragraph {
+    font-size: .93rem;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.3;
+}
+
+
+
+
+/* CTA Buttons Container */
+.cta_buttons_container {
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+button {
+    border: none;
+    padding: .5rem 3rem;
+    border-radius: 30px;
+    min-width: 85%;
+    min-height: 3rem;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto 0;
+    background-color: hsl(171, 66%, 44%);
+    color: #fff;
+    font-family: Bai Jamjuree;
+    font-weight: 700;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 2px 2px 0px #0a221e;
+    box-shadow: 0px 2px 2px 0px #0a221e;
+}
+
+button:nth-of-type(2) {
+    background-color: hsl(233, 100%, 69%);
+    -webkit-box-shadow: 0px 2px 2px 0px #303668;
+    box-shadow: 0px 2px 2px 0px 303668;
+}
+
+
+button:hover {
+    background-color: hsl(171, 35%, 60%);
+}
+
+button:nth-of-type(2):hover {
+    background-color: hsl(233, 95%, 77%);
+}
+
+
+/* Stand ALone Section */
+.stand_alone_section_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: 5rem auto 0;
+    text-align: center;
+}
+
+
+
+/* First Image Section */
+
+.image_container {
+    max-width: 85%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.image_container img {
+    max-height: 13rem;
+    min-width: 15rem;
+    margin: auto;
+}
+
+.image_headings_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+/* Features Section */
+.features_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+}
+
+
+
+.feature {
+    margin-top: 4rem;
+}
+
+
+/* Partner Comapnies Section */
+.partner_companies_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.partner {
+    margin-top: 6rem;
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(240, 6%, 97%);
+    padding-top: 2rem;
+}
+
+.footer img {
+    height: 3.5rem;
+}
+
+.footer_links_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_links {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    margin: 1.5rem 0 0;
+    font-weight: 600;
+}
+
+.footer_links:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+.footer_socials_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+}
+
+.fab {
+    margin: 3rem 1rem 2rem;
+    font-size: 1.7rem;
+    color: hsl(210, 10%, 33%);
+    cursor: pointer;
+}
+
+.fab:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+
+@media screen and (min-width:1024px) {
+    body {
+        max-width: 4440px;
+        background: url(./images/bg-header-desktop.png) no-repeat left top cover;
+        margin: auto;
+    }
+
+
+    /* <!-- Main heading --> */
+    .heading_paragraph {
+        max-width: 32rem;
+        margin: auto;
+        line-height: 2;
+    }
+
+
+    /* <!-- CTA Buttons Conrainer --> */
+    .cta_buttons_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        min-width: 13rem;
+        text-align: center;
+        margin: 0 .5rem;
+        padding: .5rem 2rem;
+    }
+
+    /* <!-- Stand Alone Section --> */
+    .stand_alone_section_container {
+        display: flex;
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+    /* <!-- First Image Section --> */
+    .first_image_section {
+        max-width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 4rem auto;
+        position: relative;
+    }
+
+    .first_image_section .image_container {
+        min-width: 50%;
+        min-height: 30rem;
+        margin: 0;
+    }
+
+    .first_image_section .image_headings_container {
+        max-width: 30%;
+        min-height: 15rem;
+        text-align: left;
+        margin: 0 0 0 8rem;
+
+    }
+
+    .first_image_section h3+p {
+        margin: 0;
+    }
+
+
+
+    .first_image_section img {
+        position: absolute;
+        min-height: 100%;
+        min-height: 100%;
+        left: -1.3rem;
+
+    }
+
+    /* <!-- Second Image Section --> */
+    .second_image_section img {
+        min-height: 28rem;
+    }
+
+
+
+    /* Features Section */
+
+    .features_section {
+        min-width: 100%;
+    }
+
+    .features_container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 90%;
+        margin: 3rem auto;
+    }
+
+    .feature {
+        max-width: 30%;
+        margin: 0;
+    }
+
+    .feature img {
+        max-height: 2rem;
+    }
+
+    /* Partner Comapnies Section */
+    .partner_companies_section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 87%;
+    }
+
+    /* Footer */
+    .footer {
+        max-height: 6rem;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 0 5rem;
+    }
+
+
+    .footer_logo_container {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer_links_container {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 60%;
+    }
+
+    .footer_links {
+        margin-left: 4rem;
+    }
+
+    .footer_socials_container {
+        margin-left: 12rem;
+        align-items: center;
+    }
+
+}
